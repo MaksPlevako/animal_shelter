@@ -5,6 +5,8 @@ import Choice from './components/choice'
 import Conditions from './components/conditions'
 import Location from './components/location'
 import Contacts from './components/contacts'
+import Help from './components/help'
+import Footer from './components/footer'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -26,6 +28,8 @@ function App() {
 			<Conditions />
 			<Location />
 			<Contacts />
+			<Help />
+			<Footer />
 		</div>
 	)
 }
