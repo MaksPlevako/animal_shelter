@@ -1,0 +1,11 @@
+.header {
+	background: url('../img/bg_mobile_red.png') no-repeat,
+		url('../img/bg_mobile_blue.png') no-repeat;
+	background-position: 50% -200%, 150% -90%;
+}
+
+.home {
+	background: url('../img/bg_mobile_red.png') no-repeat,
+		url('../img/bg_mobile_blue.png') no-repeat;
+	background-position: 0% 300%, 100% 300%;
+}
