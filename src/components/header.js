@@ -22,7 +22,7 @@ export default function Header() {
 							className='hidden lg:block'
 						/>
 					</div>
-					<div>UA</div>
+					<div className='hidden lg:block'>UA</div>
 					<button className='border-2 rounded-xl border-[#EF3959] bg-[#EF3959] px-[25px] py-[15px] text-white text-xl active:bg-white active:text-[#EF3959]'>
 						Допомогти
 					</button>

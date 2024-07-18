@@ -7,7 +7,7 @@ import decorTablet from '../img/decor_tablet.png'
 export default function Home() {
 	return (
 		<div className='py-10 home lg:flex lg:flex-row lg:mx-auto lg:w-full'>
-			<div>
+			<div className='ml-6'>
 				<div className='mb-6 text-4xl text-[#202053] font-semibold w-11/12 sm:max:lg:mx-auto lg:text-6xl lg:ml-8'>
 					Цим оченятам дуже потрібні любов і турбота
 				</div>
