@@ -8,18 +8,20 @@ import telegram from '../img/Telegram.png'
 export default function Footer() {
 	return (
 		<footer className='my-6'>
-			<div className='my-10 mx-auto w-3/5'>
-				<img src={logo} alt='logo' className='mx-auto' />
-				<div className='my-4 text-[#202053] text-xl'>
-					Приєднутесь до нас в соціальних мережах
+			<div className='grid grid-cols-2 gap-4 lg:gap-[140px] w-full p-4 text-[#202053] font-medium lg:grid-cols-3'>
+				<div className='my-10 mx-auto marker:w-3/5 sm:max-lg:col-span-2 lg:m-0'>
+					<img src={logo} alt='logo' className='sm:max-lg:mx-auto' />
 				</div>
-				<div className='flex flex-row justify-between'>
-					<img src={facebook} alt='facebook' />
-					<img src={instagram} alt='instagram' />
-					<img src={telegram} alt='telegram' />
+				<div>
+					<div className='my-4 text-[#202053] text-xl lg:text-md lg:my-0 lg:mb-8'>
+						Приєднутесь до нас в соціальних мережах
+					</div>
+					<div className='flex flex-row justify-between sm:max-lg:col-span-2'>
+						<img src={facebook} alt='facebook' />
+						<img src={instagram} alt='instagram' />
+						<img src={telegram} alt='telegram' />
+					</div>
 				</div>
-			</div>
-			<div className='grid grid-cols-2 gap-4 w-full p-4 text-[#202053] font-medium'>
 				<div>
 					<ul>
 						<li className='mb-2'>

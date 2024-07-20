@@ -1,8 +1,5 @@
 import React from 'react'
 
-import { EffectCoverflow } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-
 import animal1 from '../img/animal1.png'
 import animal2 from '../img/animal2.png'
 import animal3 from '../img/animal3.png'
@@ -13,7 +10,7 @@ import animal7 from '../img/animal7.png'
 import animal8 from '../img/animal8.png'
 import arrowPhone from '../img/arrow-phone.png'
 
-export default function Slider() {
+export default function Animal() {
 	const animal = [
 		{
 			img: animal1,
@@ -57,38 +54,23 @@ export default function Slider() {
 		},
 	]
 	return (
-		<div>
-			<Swiper
-				modules={[EffectCoverflow]}
-				spaceBetween={20}
-				slidesPerView={1.6}
-				coverflowEffect={{
-					rotate: 0,
-					slideShadows: false,
-				}}
-				className='coverflow translate-x-8'
-			>
-				{animal.map((p, index) => {
-					return (
-						<SwiperSlide key={index} className=''>
-							<div className=''>
-								<img src={p.img} alt={index} className='mb-6' />
-								<div className='flex flex-row items-center justify-between'>
-									<div>
-										<div className='text-[#202053] text-4xl '>{p.name}</div>
-										<div className='text-[#404040] font-medium my-3'>
-											{p.age}
-										</div>
-									</div>
-									<button>
-										<img src={arrowPhone} alt='arrow' />
-									</button>
-								</div>
+		<div className='grid grid-cols-4 gap-4 w-11/12'>
+			{animal.map((p, index) => {
+				return (
+					<div>
+						<img src={p.img} alt={index} className='mb-6' />
+						<div className='flex flex-row items-center justify-between'>
+							<div>
+								<div className='text-[#202053] text-4xl '>{p.name}</div>
+								<div className='text-[#404040] font-medium my-3'>{p.age}</div>
 							</div>
-						</SwiperSlide>
-					)
-				})}
-			</Swiper>
+							<button>
+								<img src={arrowPhone} alt='arrow' />
+							</button>
+						</div>
+					</div>
+				)
+			})}
 		</div>
 	)
 }

@@ -11,15 +11,15 @@ import decor5 from '../img/decor5.png'
 export default function Conditions() {
 	return (
 		<section className='my-6'>
-			<div className='text-4xl text-[#202053] font-semibold text-center'>
+			<div className='text-4xl text-[#202053] font-semibold text-center lg:text-6xl lg:mb-8'>
 				Наші умови
 			</div>
-			<div className='w-11/12 mx-auto'>
-				<div className='my-6'>
-					<div className='text-[#4A86FF] text-4xl font-semibold text-center'>
+			<div className='w-11/12 mx-auto lg:flex lg:flex-row lg:justify-around lg:w-full'>
+				<div className='my-6 lg:w-[300px]'>
+					<div className='text-[#4A86FF] font-semibold text-center text-[32px] lg:text-left'>
 						Лише власник
 					</div>
-					<div className='text-[#404040] font-medium my-3'>
+					<div className='text-[#404040] font-medium my-3 lg:text-xl'>
 						Собаку чи кота віддаємо лише в руки майбутньому власнику
 					</div>
 					<div className='relative'>
@@ -27,24 +27,32 @@ export default function Conditions() {
 						<img src={decor3} alt='decor' className='absolute top-1 left-1' />
 					</div>
 				</div>
-				<div className='my-6'>
-					<div className='text-[#4A86FF] text-4xl font-semibold text-center'>
+				<div className='my-6 lg:w-[300px]'>
+					<div className='relative hidden lg:block mb-2'>
+						<img src={animal2} alt='animal' className='mx-auto' />
+						<img
+							src={decor4}
+							alt='decor'
+							className='absolute top-1 left-1/2 -translate-x-1/2'
+						/>
+					</div>
+					<div className='text-[#4A86FF]  font-semibold text-center text-[32px] lg:text-left'>
 						Тварина для сім'ї
 					</div>
-					<div className='text-[#404040] font-medium my-3'>
+					<div className='text-[#404040] font-medium my-3 lg:text-xl'>
 						Творинки не для утримання на ланцюгу, охорони підприєства чи
 						самовигулу
 					</div>
-					<div className='relative'>
+					<div className='relative lg:hidden'>
 						<img src={animal2} alt='animal' />
 						<img src={decor4} alt='decor' className='absolute top-1 left-1' />
 					</div>
 				</div>
-				<div className='my-6'>
-					<div className='text-[#4A86FF] text-4xl font-semibold text-center'>
+				<div className='my-6 lg:w-[300px]'>
+					<div className='text-[#4A86FF] font-semibold text-center text-[32px] lg:text-left'>
 						Відповідальність
 					</div>
-					<div className='text-[#404040] font-medium my-3'>
+					<div className='text-[#404040] font-medium my-3 lg:text-xl'>
 						Не забирайте тварину з притулку, якщо не готові про неї піклуватись
 					</div>
 					<div className='relative'>
