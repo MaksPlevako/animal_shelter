@@ -17,23 +17,23 @@ export default function Contacts() {
 						<span className='hidden lg:inline'> безпосередньо</span>:
 					</div>
 					<div className='grid grid-cols-4 gap-4 w-11/12 mx-auto xl:mx-0'>
-						<div className='text-[#4A86FF] text-xl'>Адреса</div>
-						<div className='col-span-3 lg:text-[20px] text-base'>
+						<div className='text-[#4A86FF] text-xl lg:text-2xl'>Адреса</div>
+						<div className='col-span-3 lg:text-[20px] text-base lg:text-2xl'>
 							cмт. Жук
 							<br /> м. Івано-Франківська область
 						</div>
-						<div className='text-[#4A86FF] text-xl'>Телефон</div>
-						<div className='col-span-3 font-medium text-base'>
+						<div className='text-[#4A86FF] text-xl lg:text-2xl'>Телефон</div>
+						<div className='col-span-3 font-medium text-base lg:text-2xl'>
 							<b>
 								+38 (099) 123 45 67
 								<br />
 								+38 (088) 123 45 67
 							</b>
 						</div>
-						<div className='col-span-2 text-[#4A86FF] text-lg'>
+						<div className='col-span-2 text-[#4A86FF] text-lg lg:text-2xl'>
 							Електронна адреса
 						</div>
-						<div className='col-span-2 font-bold text-base'>
+						<div className='col-span-2 font-bold text-base lg:text-2xl'>
 							hatyna@gmail.com
 						</div>
 					</div>
