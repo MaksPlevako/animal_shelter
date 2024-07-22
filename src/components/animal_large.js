@@ -6,11 +6,9 @@ import animal3 from '../img/animal3.png'
 import animal4 from '../img/animal4.png'
 import animal5 from '../img/animal5.png'
 import animal6 from '../img/animal6.png'
-import animal7 from '../img/animal7.png'
-import animal8 from '../img/animal8.png'
 import arrowPhone from '../img/arrow-phone.png'
 
-export default function Animal() {
+export default function AnimalLarge() {
 	const animal = [
 		{
 			img: animal1,
@@ -42,30 +40,24 @@ export default function Animal() {
 			name: 'Джек',
 			age: 'Вік 2 роки 1 місяць',
 		},
-		{
-			img: animal7,
-			name: 'Буся',
-			age: 'Вік 2 роки 1 місяць',
-		},
-		{
-			img: animal8,
-			name: 'Журик',
-			age: 'Вік 1 рік',
-		},
 	]
 	return (
-		<div className='grid grid-cols-4 gap-4 w-11/12 mx-auto'>
+		<div className='grid grid-cols-3 gap-[125px] w-full'>
 			{animal.map((p, index) => {
 				return (
 					<div>
-						<img src={p.img} alt={index} className='mb-6' />
+						<img src={p.img} alt={index} className='mb-6 w-full' />
 						<div className='flex flex-row items-center justify-between'>
 							<div>
-								<div className='text-[#202053] text-4xl '>{p.name}</div>
-								<div className='text-[#404040] font-medium my-3'>{p.age}</div>
+								<div className='text-[#202053] text-5xl font-bold '>
+									{p.name}
+								</div>
+								<div className='text-[#404040] font-medium my-3 text-2xl'>
+									{p.age}
+								</div>
 							</div>
-							<button>
-								<img src={arrowPhone} alt='arrow' />
+							<button className='w-1/4'>
+								<img src={arrowPhone} alt='arrow' className='w-full' />
 							</button>
 						</div>
 					</div>

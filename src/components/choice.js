@@ -2,6 +2,7 @@ import React from 'react'
 
 import Slider from './slider'
 import Animal from './animal'
+import AnimalLarge from './animal_large'
 
 export default function Choice() {
 	return (
@@ -12,11 +13,14 @@ export default function Choice() {
 			<div className=' mx-auto text-center my-6 text-[#404040] font-medium sm:max-lg:w-11/12 lg:text-2xl '>
 				Не купуй – прихисти, адже справжня дружба не продається!
 			</div>
-			<div className='w-full mb-6 lg:hidden'>
+			<div className='w-11/12 mb-6 mx-auto lg:hidden'>
 				<Slider />
 			</div>
-			<div className='hidden lg:block lg:w-full lg:mx-auto lg:mb-6'>
+			<div className='hidden lg:block lg:w-11/12 lg:mx-auto lg:mb-6 xl:hidden'>
 				<Animal />
+			</div>
+			<div className='hidden xl:block xl:w-11/12 xl:mx-auto xl:my-16'>
+				<AnimalLarge />
 			</div>
 			<div className='text-center'>
 				<button className='border-0 rounded-2xl rounded-bl-none w-10/12 bg-gradient-to-r from-blue-600 via-white to-pink-600 p-0.5 active:p-1 lg:w-2/5'>

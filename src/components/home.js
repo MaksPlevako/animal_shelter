@@ -24,7 +24,7 @@ export default function Home() {
 					/>
 				</div>
 				<div className='w-full text-center mt-6 lg:w-auto lg:text-left lg:ml-8'>
-					<button className='text-4xl border-2 rounded-2xl w-11/12 py-3 border-[#EF3959] bg-[#EF3959] text-white rounded-bl-none  active:bg-white active:text-[#EF3959] lg:w-3/5 lg:py-8 lg:font-semibold'>
+					<button className='text-4xl border-2 rounded-2xl w-11/12 py-3 border-[#EF3959] bg-[#EF3959] text-white rounded-bl-none  active:bg-white active:text-[#EF3959] lg:w-3/5 lg:py-8 lg:font-semibold xl:w-1/2'>
 						Обрати
 					</button>
 				</div>

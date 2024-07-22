@@ -5,7 +5,7 @@ import decor from '../img/decor6.png'
 
 export default function Contacts() {
 	return (
-		<section className='my-8'>
+		<section className='my-8 xl:my-16'>
 			<div className='text-4xl font-semibold text-[#202053] text-center lg:text-6xl'>
 				Наші контакти
 			</div>
@@ -16,14 +16,14 @@ export default function Contacts() {
 						<br /> Зв'яжіться з нами
 						<span className='hidden lg:inline'> безпосередньо</span>:
 					</div>
-					<div className='grid grid-cols-4 gap-4 w-11/12 sm:max-lg:mx-auto'>
+					<div className='grid grid-cols-4 gap-4 w-11/12 mx-auto xl:mx-0'>
 						<div className='text-[#4A86FF] text-xl'>Адреса</div>
-						<div className='col-span-3 lg:text-[20px]'>
+						<div className='col-span-3 lg:text-[20px] text-base'>
 							cмт. Жук
 							<br /> м. Івано-Франківська область
 						</div>
 						<div className='text-[#4A86FF] text-xl'>Телефон</div>
-						<div className='col-span-3 font-medium'>
+						<div className='col-span-3 font-medium text-base'>
 							<b>
 								+38 (099) 123 45 67
 								<br />
@@ -33,12 +33,12 @@ export default function Contacts() {
 						<div className='col-span-2 text-[#4A86FF] text-lg'>
 							Електронна адреса
 						</div>
-						<div className='col-span-2'>
-							<b>hatyna@gmail.com</b>
+						<div className='col-span-2 font-bold text-base'>
+							hatyna@gmail.com
 						</div>
 					</div>
 				</div>
-				<div className='relative lg:w-1/2'>
+				<div className='relative lg:w-1/2 my-6 lg:my-0'>
 					<img src={contacts} alt='contacts' className='mx-auto w-10/12' />
 					<img
 						src={decor}

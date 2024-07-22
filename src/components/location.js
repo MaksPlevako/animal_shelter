@@ -19,11 +19,11 @@ export default function Location() {
 				/>
 			</div>
 			<div className='w-full relative hidden lg:block'>
-				<img src={map_tablet} alt='map' />
+				<img src={map_tablet} alt='map' className='xl:mx-auto' />
 				<img
 					src={point}
 					alt='point'
-					className='absolute left-[652px] top-[187px]'
+					className='absolute left-[652px] top-[187px] xl:left-[777px]'
 				/>
 			</div>
 		</section>

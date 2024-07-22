@@ -61,17 +61,17 @@ export default function Slider() {
 			<Swiper
 				modules={[EffectCoverflow]}
 				spaceBetween={20}
-				slidesPerView={1.6}
+				slidesPerView={1.4}
 				coverflowEffect={{
 					rotate: 0,
 					slideShadows: false,
 				}}
-				className='coverflow translate-x-8'
+				className='coverflow'
 			>
 				{animal.map((p, index) => {
 					return (
 						<SwiperSlide key={index} className=''>
-							<div className=''>
+							<div className='w-[223px]'>
 								<img src={p.img} alt={index} className='mb-6' />
 								<div className='flex flex-row items-center justify-between'>
 									<div>

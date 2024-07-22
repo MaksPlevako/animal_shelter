@@ -11,10 +11,10 @@ export default function Header() {
 	const dispatch = useDispatch()
 
 	return (
-		<div className='header mb-6'>
+		<div className='header mb-6 py-6'>
 			<header>
 				<div className='flex flex-grid justify-around items-center py-2 '>
-					<div className='lg:basis-1/2 pl-9'>
+					<div className='lg:basis-1/2 pl-9 xl:basis-auto'>
 						<img src={logo_mobile} alt='logo mobile' className='lg:hidden' />
 						<img
 							src={logo_tablet}
@@ -22,11 +22,45 @@ export default function Header() {
 							className='hidden lg:block'
 						/>
 					</div>
+					<div className='hidden xl:block'>
+						<ul className='xl:flex xl:flex-row xl:gap-6 xl:text-xl xl:text-[#202053]'>
+							<li>
+								<button className='hover:text-[#4A86FF] hover:underline hover:underline-offset-8 decoration-white hover:decoration-[#4A86FF] ease-in-out duration-700'>
+									Домашня
+								</button>
+							</li>
+							<li>
+								<button className='hover:text-[#4A86FF] hover:underline hover:underline-offset-8 decoration-white hover:decoration-[#4A86FF] ease-in-out duration-700'>
+									Про нас
+								</button>
+							</li>
+							<li>
+								<button className='hover:text-[#4A86FF] hover:underline hover:underline-offset-8 decoration-white hover:decoration-[#4A86FF] ease-in-out duration-700'>
+									Вірні друзі
+								</button>
+							</li>
+							<li>
+								<button className='hover:text-[#4A86FF] hover:underline hover:underline-offset-8 decoration-white hover:decoration-[#4A86FF] ease-in-out duration-700'>
+									Наші умови
+								</button>
+							</li>
+							<li>
+								<button className='hover:text-[#4A86FF] hover:underline hover:underline-offset-8 decoration-white hover:decoration-[#4A86FF] ease-in-out duration-700'>
+									Локаця
+								</button>
+							</li>
+							<li>
+								<button className='hover:text-[#4A86FF] hover:underline hover:underline-offset-8 decoration-white hover:decoration-[#4A86FF] ease-in-out duration-700'>
+									Контакти
+								</button>
+							</li>
+						</ul>
+					</div>
 					<div className='hidden lg:block'>UA</div>
 					<button className='border-2 rounded-xl border-[#EF3959] bg-[#EF3959] px-[25px] py-[15px] text-white text-xl active:bg-white active:text-[#EF3959]'>
 						Допомогти
 					</button>
-					<div onClick={() => dispatch(changeNav())}>
+					<div className='xl:hidden' onClick={() => dispatch(changeNav())}>
 						{!nav && (
 							<svg
 								xmlns='http://www.w3.org/2000/svg'

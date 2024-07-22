@@ -8,7 +8,7 @@ export default function Help() {
 				<div className='text-4xl text-[#202053] font-semibold text-center mb-6 lg:text-6xl lg:mb-16'>
 					Як допомогти
 				</div>
-				<div className='w-11/12 mx-auto border rounded-[50px] bg-gradient-to-r from-blue-700 via-white to-pink-600 p-1'>
+				<div className='w-11/12 xl:w-10/12 mx-auto border rounded-[50px] bg-gradient-to-r from-blue-700 via-white to-pink-600 p-1'>
 					<div className='bg-white border rounded-[50px] py-11 lg:py-16'>
 						<div className='text-3xl text-[#202053] font-medium text-center lg:text-[40px] lg:font-bold'>
 							Бажаєте допомогти притулку?
@@ -19,7 +19,7 @@ export default function Help() {
 							<br /> Ми з вами обов’язково звяжемось
 						</div>
 						<div className='w-full text-center'>
-							<button className='text-4xl border-2 rounded-2xl w-11/12 lg:w-1/2 py-3 lg:py-6 border-[#EF3959] bg-[#EF3959] text-white rounded-bl-none  active:bg-white active:text-[#EF3959]'>
+							<button className='text-4xl border-2 rounded-2xl w-11/12 lg:w-1/2 xl:w-2/5 py-3 lg:py-6 border-[#EF3959] bg-[#EF3959] text-white rounded-bl-none  active:bg-white active:text-[#EF3959]'>
 								Зв'яжіться з нами
 							</button>
 						</div>
